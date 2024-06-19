@@ -1,0 +1,173 @@
+body {
+  background-color: hsl(30, 54%, 90%);
+  display: grid;
+  place-content: center;
+  margin: 10rem 0;
+  width: 100%;
+}
+
+.product-img {
+  width: 100%;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 80rem;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1 {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+p {
+  font-family: "Outfit", serif;
+  font-size: 2rem;
+
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+
+.receipeheading {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  color: hsl(24, 5%, 18%);
+}
+
+.prep-time {
+  background-color: hsl(330, 100%, 98%);
+  padding: 1rem 2rem;
+  margin: 2rem 0;
+  border-radius: 1rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "outfit";
+  margin-bottom: 1rem;
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+}
+
+span {
+  color: hsl(30, 10%, 34%);
+  font-weight: 600;
+  padding: 2rem 0;
+}
+
+.receipe-time-descp,
+li {
+  list-style-position: inside;
+  margin: 1rem 0;
+}
+
+li {
+  font-family: "Outfit", serif;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  color: hsl(30, 10%, 34%);
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Young Serif", sans-serif;
+  color: hsl(14, 45%, 36%);
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+.receipe-ingredients-list > li {
+  margin: 1rem 2rem;
+}
+
+.receipe-ingredients-list {
+  border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+  margin: 1rem 0;
+}
+.receipe-ingredients-list > li::marker {
+  color: hsl(14, 45%, 36%);
+}
+
+.receipe-instru-list {
+  border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+  margin: 1rem 0;
+}
+
+.receipe-instru-list > li {
+  color: hsl(14, 45%, 36%);
+  font-weight: 900;
+}
+.receipe-instru-list > li > span {
+  margin-left: 1rem;
+}
+.receipe-instru-list > li {
+  list-style-position: inside;
+  line-height: 1.25;
+  font-weight: 400;
+}
+
+.receipe-nutri {
+  margin: 2rem 0 1rem;
+}
+.nutri-descrp {
+  margin-bottom: 2rem;
+}
+
+.nutri-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1rem 2rem;
+  border-bottom: 0.1rem solid hsl(30, 18%, 87%);
+}
+
+.nutri-val {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+@media (max-width: 480px) {
+  body {
+    margin: 0;
+  }
+  .container {
+    width: 40rem;
+    border-radius: none;
+    padding: 0;
+  }
+  .product-info {
+    padding: 0 4rem 2rem 4rem;
+  }
+  .product-img {
+    width: 100%;
+    border-radius: 0;
+    padding: 0;
+  }
+  .description,
+  .nutri-descrp {
+    font-size: 1.8rem;
+  }
+  .receipe-time-descp > li {
+    font-size: 1.8rem;
+  }
+  .receipe-ingredients-list > li {
+    font-size: 1.8rem;
+  }
+  .receipe-instru-list > li {
+    font-size: 1.7rem;
+  }
+}
